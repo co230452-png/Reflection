@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reflections — Al-Fahad M. Hamsaji</title>
+<meta name="description" content="A collection of reflections on the lessons I've learned along the way." />
+
+<!-- Google Fonts: Fraunces for display, Inter for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Background ambience ===== -->
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Reflections</span>
+          <span class="brand-subtitle">by Al-Fahad M. Hamsaji</span>
+        </span>
+      </a>
+
+      <div class="header-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-text"><strong>1</strong> reflection published</span>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode" title="Toggle theme">
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="header-progress" aria-hidden="true">
+      <div class="header-progress-bar" id="header-progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <p class="hero-kicker">a record of what I've learned</p>
+        <p class="hero-byline">Al-Fahad M. Hamsaji</p>
+        <h1 class="hero-title">
+          Every lesson<br />
+          deserves a second <em>look.</em>
+        </h1>
+        <p class="hero-text">
+          This is where I set down what each lesson left behind — the parts
+          that made sense, the parts that didn't, and the parts I'm still
+          carrying forward. A place to pass on my reflections properly,
+          instead of letting them fade the moment class ends.
+        </p>
+        <div class="hero-actions">
+          <a href="#journal" class="hero-cta">
+            <span>Read the reflections</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M12 5v14M19 12l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <div class="hero-meta">
+            <span class="hero-meta-number">01</span>
+            <span class="hero-meta-label">reflection<br />on record</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="hero-panel-glow"></div>
+        <span class="hero-panel-kicker">field notes</span>
+        <blockquote class="hero-panel-quote">
+          "Security should influence how a system is built from the
+          beginning, not just be added as a fix later."
+        </blockquote>
+        <div class="hero-panel-divider"></div>
+        <ul class="hero-panel-list">
+          <li><span>01</span>McCumber Cube</li>
+          <li><span>02</span>Foundations of Security</li>
+          <li><span>03</span>Security Principles</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Journal / Reflections ===== -->
+  <main id="journal" class="journal">
+    <div class="journal-inner">
+
+      <div class="journal-heading">
+        <div>
+          <p class="section-kicker">the collection</p>
+          <h2>My Reflections</h2>
+        </div>
+        <div class="journal-heading-line" aria-hidden="true"></div>
+      </div>
+
+      <div class="entry-list">
+
+        <!-- ================= REFLECTION TEMPLATE =================
+             To add a new reflection: copy one <article class="entry"> block
+             below (including opening/closing tags), paste it as the FIRST
+             item inside .entry-list, and edit the contents.
+
+             <article class="entry">
+               <div class="entry-meta">
+                 <span class="entry-week">Lesson 00</span>
+                 <span class="entry-dot" aria-hidden="true">•</span>
+                 <time class="entry-date" datetime="YYYY-MM-DD">Month DD, YYYY</time>
+               </div>
+               <h3 class="entry-title">Title goes here</h3>
+               <p class="entry-text">
+                 Reflection text goes here.
+               </p>
+               <div class="entry-tags">
+                 <span class="tag mood-calm">calm</span>
+                 <span class="tag">tag</span>
+               </div>
+             </article>
+             ========================================================= -->
+
+        <!-- Reflection: First Week -->
+        <article class="entry">
+          <span class="entry-index" aria-hidden="true">01</span>
+          <div class="entry-meta">
+            <span class="entry-week">First Week</span>
+            <span class="entry-dot" aria-hidden="true">•</span>
+            <time class="entry-date" datetime="2026-08-01">August 1, 2026</time>
+          </div>
+          <h3 class="entry-title">The McCumber Cube, Foundations of Security, and Security Principles</h3>
+
+          <h4 class="entry-subheading">McCumber Cube</h4>
+          <p class="entry-text">
+            Before this discussion, I only viewed information security as
+            protecting systems from hackers and unauthorized access. Since I
+            already have experience in programming, I was familiar with some
+            security practices such as using PDO to prevent SQL injection and
+            validating inputs. However, I did not fully understand where these
+            practices fit in the bigger picture of security.
+          </p>
+          <p class="entry-text">
+            Learning about the McCumber Cube changed how I look at information
+            protection. It showed me that security is not only about
+            protecting data itself but also defending it while it is stored,
+            being transferred, or being processed by a system. I found it
+            interesting because it provided a clearer way of looking at
+            security problems instead of only focusing on specific attacks.
+          </p>
+          <p class="entry-text">
+            One concept I would like to learn more about is how the McCumber
+            Cube is applied in real-world systems. I understand the
+            framework, but I am curious about how developers and security
+            professionals use it when designing and evaluating actual
+            systems.
+          </p>
+
+          <h4 class="entry-subheading">Foundations of Security</h4>
+          <p class="entry-text">
+            The discussion about the CIA Triad and AAA helped me understand
+            the concepts behind many security features that I have
+            encountered before. I was already familiar with authentication
+            systems while developing applications, but learning about AAA
+            gave me a deeper understanding of how authentication,
+            authorization, and accounting work together to control access
+            and monitor user activities.
+          </p>
+          <p class="entry-text">
+            The CIA Triad also helped me realize that security is not only
+            about preventing unauthorized access. A system also needs to
+            maintain the accuracy of information and ensure that users can
+            access it when needed. This gave me a better understanding of why
+            different security goals need to be considered together when
+            developing systems.
+          </p>
+          <p class="entry-text">
+            One thing I realized during this discussion was the difference
+            between authentication and authorization. Before this topic, I
+            knew that both were parts of user access systems, but I had not
+            really thought about how they serve different purposes. I
+            learned that authentication focuses on verifying who the user is,
+            while authorization focuses on determining what the user is
+            allowed to access or do.
+          </p>
+          <p class="entry-text">
+            A concept I would like to learn more about is how CIA and AAA are
+            applied in larger systems, especially how organizations manage
+            different users, permissions, and security requirements.
+          </p>
+
+          <h4 class="entry-subheading">Security Principles</h4>
+          <p class="entry-text">
+            The discussion on security principles was one of the topics that
+            connected more with my experience as a Computer Science student.
+            My group was assigned Security by Design, and while preparing my
+            presentation, I was able to understand the principle in a more
+            structured way. I already knew that security should be
+            considered during the planning and development of a system, but
+            learning about Security by Design helped me connect this idea to
+            a formal security principle.
+          </p>
+          <p class="entry-text">
+            Before this discussion, I usually focused on making applications
+            work first and adding security measures when needed. Learning
+            about Security by Design reinforced the importance of considering
+            security early in the development process instead of treating it
+            as something separate from the system.
+          </p>
+          <p class="entry-text">
+            I became more interested in how different security principles
+            are applied together when developing systems. Principles such as
+            Least Privilege, Need to Know, and Complete Mediation showed me
+            that security is not only about adding security features but
+            also about making careful decisions about user access and system
+            behavior.
+          </p>
+          <p class="entry-text">
+            One concept I would like to learn more about is how these
+            security principles are applied in real software projects. I
+            want to understand how developers balance security requirements
+            with other factors such as system performance and usability.
+          </p>
+          <p class="entry-text">
+            Overall, these discussions changed my understanding of
+            information security. I used to think of security mainly as
+            adding protections against attacks, but I now see it as a
+            broader process that involves protecting information, managing
+            access, and considering security throughout system development.
+          </p>
+
+          <div class="entry-tags">
+            <span class="tag mood-thoughtful">thoughtful</span>
+            <span class="tag">security</span>
+            <span class="tag">McCumber Cube</span>
+            <span class="tag">CIA Triad</span>
+            <span class="tag">security by design</span>
+          </div>
+        </article>
+
+      </div>
+      <!-- /.entry-list -->
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </span>
+        <div class="footer-brand-text">
+          <span class="brand-title">Reflections</span>
+          <span class="footer-note">Al-Fahad M. Hamsaji — passed on, one lesson at a time.</span>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <a href="#top" class="footer-link">Back to top</a>
+        <span class="footer-divider" aria-hidden="true">•</span>
+        <a href="#journal" class="footer-link">Latest reflection</a>
+      </div>
+
+      <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+          <path d="M12 19V5M5 12l7-7 7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
