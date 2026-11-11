@@ -547,6 +547,7 @@ button {
 .entry-list {
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 28px;
 }
 
